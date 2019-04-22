@@ -1,0 +1,24 @@
+*{
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: #FDECA9;
+}
+h3{
+    text-align: center;
+}
+div.day{
+    text-align: right;
+}
+div.text{
+    border: solid black 1px;
+    padding: 10px;
+    background-color: #FFE982;
+}
+button{
+   background-color: darkred;
+   color: white;
+   border-radius: 50%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}

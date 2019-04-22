@@ -1,8 +1,11 @@
 <!DOCTYPE php>
 <html lang="ru">
 <head>
+    <title>Freshest news</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button onclick="location.href='admin.php'">Администратор</button>
     <?php
     $server = 'localhost';
     $user = 'root';
@@ -20,14 +23,14 @@
         $text = $row[1];
         $title = $row[2];
         echo "<h3>".$title."</h3>";
-        echo "<div>".$text."</div>";
-        echo "<div>".$date."</div>";
+        echo "<div class='text'>".$text."</div>";
+        echo "<div class='day'>".$date."</div>";
     }
-    if (!mysqli_error()) {
+    if (!mysqli_error($link)) {
         
     }
     else {
-        print ("Ошибка БД в запросе " + $request + ". MySQL пишет ". mysqli_error());
+        print ("Ошибка БД в запросе " + $request + ". MySQL пишет ". mysqli_error($link));
     };
     mysqli_free_result ($result);
     mysqli_close($link);

@@ -8,12 +8,16 @@ if (mysqli_connect_errno()){
     echo "ERROR connecting DB";
     exit;
 }
-echo "Соединение с MySQL установлено!<br/>";
-echo "Информация о сервере: " . mysqli_get_host_info($link) . "<br/>";
 $request = "SELECT news_date, news_text, news_title FROM news";
 $result = mysqli_query($link, $request, MYSQLI_USE_RESULT);
-$row = mysqli_fetch_array($result, MYSQLI_NUM);
-printf ("%s<br/> (%s)<br/> %s<br/>", $row[0], $row[1], $row[2]);
+while ($row = mysqli_fetch_array($result)){
+    $date = $row[0];
+    $text = $row[1];
+    $title = $row[2];
+    echo "<h3>".$title."</h3>";
+    echo "<div>".$text."</div>";
+    echo "<div>".$date."</div>";
+}
 if (!mysqli_error()) {
     
   }

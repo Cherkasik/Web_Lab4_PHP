@@ -1,0 +1,30 @@
+*{
+    background-color: #FDECA9;
+}
+h3{
+    text-align: center;
+}
+div.day{
+    text-align: right;
+}
+div.text{
+    border: solid black 1px;
+    padding: 10px;
+    background-color: #FFE982;
+}
+.butt{
+    background-color: grey;
+    color: black;
+    border-radius: 5px;
+}
+input, textarea{
+    background-color: white;
+    width: 80%;
+}
+form > div{
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+}

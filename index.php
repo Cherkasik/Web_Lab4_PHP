@@ -1,11 +1,11 @@
-<!DOCTYPE php>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <title>Freshest news</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="location.href='admin.php'">Администратор</button>
+    <button class="admin" onclick="location.href='admin.php'">Администратор</button>
     <?php
     $server = 'localhost';
     $user = 'root';

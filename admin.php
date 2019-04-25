@@ -41,4 +41,5 @@
         <input class="butt" type="submit" name="delete" value="Удалить">
     </div>
     </form>
+    <button class="return" onclick="location.href='/'">Назад</button>
 </body>
